@@ -3,5 +3,5 @@
   tasks:
     - name: Copy file 
       ansible.builtin.debug:
-      src: hello.txt
-      dest: /home/centos/
+        src: hello.txt
+        dest: /home/centos/
