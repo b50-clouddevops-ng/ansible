@@ -3,6 +3,7 @@
   tasks: 
     - name: Check tomcat is running or not
       ansible.builtin.shell: ps -ef | grep java 
+      ignore_errors: yes
 
     - name : Performing start
       ansible.builtin.debug:
