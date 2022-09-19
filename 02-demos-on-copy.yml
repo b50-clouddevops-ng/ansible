@@ -2,7 +2,7 @@
   hosts: all
   tasks:
     - name: Copy file 
-      ansible.builtin.debug:
+      ansible.builtin.copy:
         src: hello.txt
-        dest: /home/centos/hello.txt
-        
+        dest: /home/centos/
+
