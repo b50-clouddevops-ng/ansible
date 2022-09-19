@@ -4,4 +4,5 @@
     - name: Copy file 
       ansible.builtin.debug:
         src: hello.txt
-        dest: /home/centos/
+        dest: /home/centos/hello.txt
+        
