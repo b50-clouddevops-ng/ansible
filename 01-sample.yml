@@ -1,11 +1,22 @@
-- name: My playbook
+- name: My playbook List-1 from Gupta fmly
   hosts: all
   tasks:
-    - name: Print hello from task1
+    - name: Play from Ngupta
       ansible.builtin.debug:
-        msg: Hio from task1
+        msg: Hi from NGupta 
 
-    - name: Print hello from play1
+    - name: Play from PGupta
       ansible.builtin.debug:
-        msg: Hio from task1
+        msg: Hi from PGupta
+
+- name: My Playbook List-2 from Sharma fmly
+  hosts: all
+  tasks:
+    - name: Play from Nikhil sharma
+      ansible.builtin.debug:
+        msg: Hi from task1
+
+    - name: Play from Psharma
+      ansible.builtin.debug:
+        msg: Hi from PSharma
       
