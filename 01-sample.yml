@@ -1,4 +1,4 @@
--name: My playbook
+- name: My playbook
   hosts: all
   tasks:
     - name: Print hello from task1
