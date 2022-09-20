@@ -14,19 +14,19 @@
     path: /usr/share/nginx/html
     state: absent
 
-- name: Coping frotend context to nginx path 
-  ansible.builtin.copy:
-    src: /tmp/frontend-main/static/
-    dest: /usr/share/nginx/html
-    remote_src: yes
+# - name: Coping frotend context to nginx path 
+#   ansible.builtin.copy:
+#     src: /tmp/frontend-main/static/
+#     dest: /usr/share/nginx/html
+#     remote_src: yes
 
-- name: Coping proxy config 
-  ansible.builtin.copy:
-    src: roboshop.conf 
-    dest: /etc/nginx/default.d/roboshop.conf
+# - name: Coping proxy config 
+#   ansible.builtin.copy:
+#     src: roboshop.conf 
+#     dest: /etc/nginx/default.d/roboshop.conf
 
-- name: Starting Nginx Service 
-  ansible.builtin.service:
-    name: nginx 
-    state: restarted
-    enabled: yes
+# - name: Starting Nginx Service 
+#   ansible.builtin.service:
+#     name: nginx 
+#     state: restarted
+#     enabled: yes
