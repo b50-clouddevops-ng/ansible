@@ -9,11 +9,12 @@
     security_group_id: "sg-0ad44c710cefaf748"  # Update as per your security group id
     image: "ami-024b3a099b37eaf47"             # Update this with the AMI ID in your account which has ansible installed.
     region: "us-east-1"
+    VpcId : "vpc-37119c5f"
   tasks:
     - name: Launch instance
       amazon.aws.ec2:
         group_id: "{{ security_group_id }}"
-        "VpcId" : "vpc-37119c5f"
+        vpc_id: "{{VpcId}}"       
         instance_type: "{{ instance_type }}"
         image: "{{ image }}"
         wait: true
