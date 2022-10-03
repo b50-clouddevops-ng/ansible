@@ -7,7 +7,8 @@ pipeline {
     stages {
         stage('dry-run') {
             steps {
-                sh "echo hi"
+                sh "env"
+                sh "ansible-playbook  -i inv -e COMPONENT=mongodb  -e ansible_user=centos -e ansible_password=DevOps321 roboshop-dryrun.yml"
             }
         }
     }
