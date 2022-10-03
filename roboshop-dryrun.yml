@@ -11,12 +11,12 @@
     security_group_id: "sg-0200735cd456f6308"
     image: "ami-006234a9bfd5b5848"
     region: "us-east-1"
-    vpc_subnet_id : "vpc-37119c5f"
+    #vpc_subnet_id : "vpc-37119c5f"
   tasks:
     - name: Launch instance
       amazon.aws.ec2:
         group_id: "{{ security_group_id }}"
-        vpc_subnet_id: "{{vpc_subnet_id}}"       
+        #vpc_subnet_id: "{{vpc_subnet_id}}"       
         instance_type: "{{ instance_type }}"
         image: "{{ image }}"
         wait: true
