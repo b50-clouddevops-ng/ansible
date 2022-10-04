@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        SSH_CRED = credentials('SSH')
+        SSH_CRED = credentials('SSH_NG')
     }
 
     stages {
